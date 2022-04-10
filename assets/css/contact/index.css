@@ -1,0 +1,10 @@
+.contact-section > div > label {
+    margin: 5px 0px
+}
+
+.contact-section > div > button {
+    background-color: var(--primary);
+}
+.form-control {
+    margin: 10px 0px
+}
