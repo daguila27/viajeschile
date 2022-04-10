@@ -7,7 +7,7 @@
     position: fixed; /**sticky;**/
     /* top: 1px; */
     width: 100%;
-    color: white;
+    /* color: var(--light); */
     height: 50px;
     align-items: center;
     padding: 0px 10%;
