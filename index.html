@@ -18,6 +18,10 @@
     <title>Viajes Chile</title>
 </head>
 <body>
+    <script>
+        /**se almacenó en una variables para que '//' no se confunda con un comentario**/
+        const HTTP = 'http://'
+    </script>
     <!-- SE UTILIZO EL COMPONENTE DE BOOTSTRAP NAVBAR CON SU ESTILO MODIFICADO  -->
     <nav class="navbar navbar-light">
         <div class="container-fluid nav-menu">
@@ -206,10 +210,10 @@
                     <div class="social">
                         <!-- SE USARON ICONOS DE TIPO SQUARE PARA MANTENER HOMOGENEIDAD ENTRE LOS ICONOS -->
                         <!-- SE USARON TOOLTIPS PARA INDICAR EL NOMBRE DE LA RED SOCIAL -->
-                        <i class="fab fa-github-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Git Hub"></i>
-                        <i class="fab fa-instagram-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></i>
-                        <i class="fab fa-facebook-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></i>
-                        <i class="fab fa-twitter-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></i>
+                        <i onclick="window.open(HTTP+'github.com', '_blank').focus();" class="fab fa-github-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Git Hub"></i>
+                        <i onclick="window.open(HTTP+'instagram.com', '_blank').focus();" class="fab fa-instagram-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></i>
+                        <i onclick="window.open(HTTP+'twitter.com', '_blank').focus();" class="fab fa-twitter-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></i>
+                        <i onclick="window.open(HTTP+'facebook.com', '_blank').focus();" class="fab fa-facebook-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></i>
                     </div>
                 </div>
             </div>
