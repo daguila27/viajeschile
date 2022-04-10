@@ -27,22 +27,38 @@
             </div>
             
             <div class="menu">
-                <label>
+                <label
+                    onClick="document.querySelector('#inicio').scrollIntoView({
+                        behavior: 'smooth'
+                      });"
+                >
                     Inicio
                 </label>
-                <label>
+                <label
+                onClick="document.querySelector('#quienessomos').scrollIntoView({
+                    behavior: 'smooth'
+                  });"
+                >
                     ¿Quienes Somos?
                 </label>
-                <label>
+                <label
+                onClick="document.querySelector('#destacados').scrollIntoView({
+                    behavior: 'smooth'
+                  });"
+                >
                     Destacados
                 </label>
-                <label>
+                <label
+                onClick="document.querySelector('#contacto').scrollIntoView({
+                    behavior: 'smooth'
+                  });"
+                >
                     Contacto
                 </label>
             </div>
         </div>
     </nav>
-    <section style="padding: 0">
+    <section style="padding: 0" id="inicio">
         <div id="viajeschileCarousel" class="w-100 carousel slide" data-bs-ride="carousel">
             <div class="carousel-section carousel-inner">
                 <div class="carousel-item active">
@@ -67,7 +83,7 @@
     </section>
 
     <!-- SECCIONES "QUIENES SOMOS" Y "DESTACADOS" SE AJUSTAN AL TAMAÑO DE PANTALLA POR EL USO DE GRILLA (BOOTSTRAP 5) -->
-    <section>
+    <section id="quienessomos">
         <div class="container">
             <div class="row whoare-section">
                 <label class="h1 col-12">¿QUIENES SOMOS?</label>
@@ -105,7 +121,7 @@
     </section>
 
     
-    <section>
+    <section id="destacados">
         <!-- SE UTILIZÓ COMPONENTE CARD DE BOOSTRAP 5 -->
         <div class="container">
             <div class="row featured-section">
@@ -156,7 +172,7 @@
         </div>        
     </section>
     
-    <section>
+    <section id="contacto">
         <!-- SE UTILIZÓ COMPONENTE INPUT DE BOOTSTRAP -->
         <div class="container">
             <div class="row contact-section">

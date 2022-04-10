@@ -24,6 +24,12 @@
     margin: 0px 20px;
     white-space: nowrap;
     display: block;
+    padding: 5px 10px;
+}
+
+.nav-menu > .menu > label:hover {
+    background-color: black;
+    cursor: pointer;
 }
 
 .nav-menu > .logo {
