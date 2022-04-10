@@ -1,6 +1,10 @@
 @import url("./vars.css");
 @import url("./nav/index.css");
 @import url("./carousel/index.css");
+@import url("./whoare/index.css");
+@import url("./featured/index.css");
+@import url("./contact/index.css");
+@import url("./footer/index.css");
 
 html {
     margin: 0
@@ -14,9 +18,11 @@ body {
 
 section {
     background-color: var(--dark);
+    padding: 30px 0px;
 }
 .h1 {
     text-align: center;
-    margin: 20px 0px;
-    font-size: 20px;
+    padding-bottom: 30px;
+    font-size: var(--big-text);
+    border-bottom: 1px solid var(--light);
 }

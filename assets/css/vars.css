@@ -1,4 +1,6 @@
 :root {
+    --primary: blue;
     --light: white;
     --dark: black;
+    --big-text: 20px 
 }
