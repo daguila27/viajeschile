@@ -1,16 +1,17 @@
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 0% 10%;
+}
 .nav-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: transparent;
-    z-index: 10;
-    position: fixed; /**sticky;**/
-    /* top: 1px; */
-    width: 100%;
-    /* color: var(--light); */
+    /* background-color: transparent; */
     height: 50px;
     align-items: center;
-    padding: 0px 10%;
 }
 
 .nav-menu > .menu {

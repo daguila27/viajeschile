@@ -11,18 +11,21 @@
 
 
     <!-- FONT AWESOME -->
+    <!-- se tuvo que crear un kit de desarrollo para la utilización de font awesome 5 -->
     <script src="https://kit.fontawesome.com/16f416b09d.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./assets/css/index.css">
     <title>Viajes Chile</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-menu">
+    <!-- SE UTILIZO EL COMPONENTE DE BOOTSTRAP NAVBAR CON SU ESTILO MODIFICADO  -->
+    <nav class="navbar navbar-light">
+        <div class="container-fluid nav-menu">
             <div class="logo">
                 <img src="./assets/img/viajes.svg" alt="">
                 <span>Viajes Chile</span>
             </div>
+            
             <div class="menu">
                 <label>
                     Inicio
@@ -62,6 +65,8 @@
               </button>
         </div>
     </section>
+
+    <!-- SECCIONES "QUIENES SOMOS" Y "DESTACADOS" SE AJUSTAN AL TAMAÑO DE PANTALLA POR EL USO DE GRILLA (BOOTSTRAP 5) -->
     <section>
         <div class="container">
             <div class="row whoare-section">
@@ -101,6 +106,7 @@
 
     
     <section>
+        <!-- SE UTILIZÓ COMPONENTE CARD DE BOOSTRAP 5 -->
         <div class="container">
             <div class="row featured-section">
                 <label class="h1 col-12">DESTACADOS</label>
@@ -151,6 +157,7 @@
     </section>
     
     <section>
+        <!-- SE UTILIZÓ COMPONENTE INPUT DE BOOTSTRAP -->
         <div class="container">
             <div class="row contact-section">
                 <label class="h1 col-12">CONTACTO</label>
@@ -182,10 +189,11 @@
                     <span>VIAJES CHILE</span>
                     <div class="social">
                         <!-- SE USARON ICONOS DE TIPO SQUARE PARA MANTENER HOMOGENEIDAD ENTRE LOS ICONOS -->
-                        <i class="fab fa-github-square fa-2xl"></i>
-                        <i class="fab fa-instagram-square fa-2xl"></i>
-                        <i class="fab fa-facebook-square fa-2xl"></i>
-                        <i class="fab fa-twitter-square fa-2xl"></i>
+                        <!-- SE USARON TOOLTIPS PARA INDICAR EL NOMBRE DE LA RED SOCIAL -->
+                        <i class="fab fa-github-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Git Hub"></i>
+                        <i class="fab fa-instagram-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></i>
+                        <i class="fab fa-facebook-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></i>
+                        <i class="fab fa-twitter-square fa-2xl" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></i>
                     </div>
                 </div>
             </div>
@@ -199,5 +207,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>  
 </body>
 </html>
