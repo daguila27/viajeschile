@@ -1,0 +1,11 @@
+@import url("./nav/index.css");
+@import url("./carousel/index.css");
+
+html {
+    margin: 0
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+}

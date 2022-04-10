@@ -1,0 +1,36 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    z-index: 10;
+    position: fixed; /**sticky;**/
+    /* top: 1px; */
+    width: 100%;
+    color: white;
+    height: 50px;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.nav-menu > .menu {
+    display: flex;
+    flex-direction: row;
+    /* position: sticky; *sticky;* */
+    top: 1px;
+}
+.nav-menu > .menu > label {
+    margin: 0px 20px;
+    white-space: nowrap;
+    display: block;
+}
+
+.nav-menu > .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-menu > .logo > img {
+    width: 20px;
+    margin-right: 10px;
+}
